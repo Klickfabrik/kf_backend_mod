@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'KF - T3 Backend Mod',
-    'description' => 'Modify TYPO3 Backend: smaller Icons, Save icons, crop content',
+    'description' => 'Modify TYPO3 Backend: smaller Icons, Save icons without text, Save & Close BTN',
     'category' => 'be',
     'author' => 'Marc Finnern',
     'author_email' => 'marc@klickfabrik.net',
@@ -20,7 +20,7 @@ $EM_CONF[$_EXTKEY] = [
     'uploadfolder' => false,
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '1.2.0',
+    'version' => '1.2.2',
     'constraints' =>
         [
             'depends' =>
