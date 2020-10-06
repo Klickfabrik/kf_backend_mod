@@ -12,10 +12,11 @@ TYPO3.jQuery(document).ready(function($){
             that.find("a").each(function(){
                 var text = $(this).text();
                 if(text.length > maxLength){
-                    //$(this).text(text.substring(0, maxLength)+"...");
+                    $(this).text(text.substring(0, maxLength)+"...");
                 }
             });
         });
     }
 });
+
 

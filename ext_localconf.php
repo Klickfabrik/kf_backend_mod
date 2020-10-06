@@ -15,8 +15,6 @@ $rootlinefields .= 'customTemplateClass';
 $GLOBALS['TYPO3_CONF_VARS']['FE']['pageOverlayFields'] .= ',customTemplateClass';
 $GLOBALS['TYPO3_CONF_VARS']['FE']['pageOverlayFields'] .= ',customSeoTitle';
 
-#$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['typo3/template.php']['preHeaderRenderHook'][] = 'EXT:kf_backend_mod/Classes/Hooks/PreHeaderRenderHook.php:PreHeaderRenderHook->preHeaderRenderHook';
-
 
 /**
  * Add Javascript to backend
