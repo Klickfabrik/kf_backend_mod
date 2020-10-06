@@ -21,8 +21,18 @@
 
 
 
-/* TYPO 8.x.x */
+/* TYPO 7.x.x */
 .modulemenu .modulemenu-group-container .modulemenu-group-title,
 .modulemenu .modulemenu-group-container .modulemenu-item-title {padding-top: 0;}
 .modulemenu-group-container .modulemenu-icon .t3js-icon {margin:0 0 5px 5px;height: 20px;width: 20px;}
 .modulemenu-group-container .modulemenu-icon .t3js-icon img {max-width: 100%;height: auto;width: 100%;}
+
+
+/* TYPO 8.x.x */
+.t3js-splitbutton .dropdown-menu {margin-left:10px;}
+.t3js-splitbutton .dropdown-menu li a[data-name="_savedokview"],
+.t3js-splitbutton .dropdown-menu li a[data-name="_savedoknew"],
+.t3js-splitbutton .dropdown-menu li a[data-name="_saveandclosedok"] {color: #333;background-color: #eee;padding: 4px 5px;display: block;border: 1px solid #bbb;top: 0;left: 0;}
+.t3js-splitbutton .dropdown-menu li a[data-name="_savedokview"]:hover,
+.t3js-splitbutton .dropdown-menu li a[data-name="_savedoknew"]:hover,
+.t3js-splitbutton .dropdown-menu li a[data-name="_saveandclosedok"]:hover {background-color: #d5d4d4;}
