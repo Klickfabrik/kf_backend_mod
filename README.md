@@ -10,5 +10,5 @@
 * save-icons not in dropdown, Icons next to each other (faster to save, save and new, save and close)
 
 ## Notes:
-* Backend modules work only with TYPO3 ≥ 7.6
+* Backend modules work only with TYPO3 ≥ 10.x
 * If you find errors, please, report them [here](<mailto:marc@klickfabrik.net?subject=kf_backend_mod>).
