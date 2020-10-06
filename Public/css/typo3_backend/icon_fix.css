@@ -34,6 +34,7 @@
 .module-docheader-bar-column-left button {border-radius: 2px!important;}
 .t3js-splitbutton .dropdown-menu {margin:0 10px;border: 0 none;float: none;}
 .t3js-splitbutton .dropdown-menu li {margin-right: -2px;}
+.t3js-splitbutton .dropdown-menu li a[data-name="CMD"],
 .t3js-splitbutton .dropdown-menu li a[data-name="_savedokview"],
 .t3js-splitbutton .dropdown-menu li a[data-name="_savedoknew"],
 .t3js-splitbutton .dropdown-menu li a[data-name="_saveandclosedok"] {border-radius:2px;color: #333;background-color: #eee;padding: 5px 5px 3px 5px;display: block;border: 1px solid #bbb;top: 0;left: 0;}
