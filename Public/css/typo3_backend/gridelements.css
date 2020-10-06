@@ -1,0 +1,8 @@
+#PageLayoutController {}
+#PageLayoutController .t3-page-ce-dragitem {max-width: 100%}
+#PageLayoutController .t3-page-column {}
+#PageLayoutController .t3-page-column-1 {}
+#PageLayoutController .t3-page-column-1.t3-grid-cell {background: rgba(0,100,0,0.2);}
+
+#PageLayoutController .t3-page-column-2 {}
+#PageLayoutController .t3-page-column-2.t3-grid-cell {}

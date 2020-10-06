@@ -1,0 +1,28 @@
+/* small icons */
+.typo3-module-menu-item-link .typo3-module-menu-item-title {padding-top: 0;}
+.typo3-app-icon {height: 20px;width: 20px;}
+.typo3-app-icon img {max-width: 100%;height: auto;width: 100%;}
+
+.typo3-app-icon.typo3-module-menu-group-icon {width: 32px;height: 32px;}
+.typo3-module-menu-group-header .typo3-module-menu-group-title {padding-top: 7px;}
+
+/* buttons */
+.t3js-splitbutton .btn-default {float: left;display: inline-block;}
+.t3js-splitbutton .dropdown-toggle {display: none!important;}
+.t3js-splitbutton .dropdown-menu {display: block;min-width: inherit;text-align: center;padding: 0;position: absolute; left: 0; top: -37px;border-color: #bbbbbb;height: 26px;border-radius: 0}
+.t3js-splitbutton .dropdown-menu {box-shadow: none;float: none; position: relative; display: inline-block; padding: 0; margin: 0 5px 0 -1px; top: 0;background-color: transparent}
+.t3js-splitbutton .dropdown-menu li {display: inline-block;font-size: 0;}
+.t3js-splitbutton .dropdown-menu li a {padding: 0 5px;position: relative;top:-2px;}
+.t3js-toggle-gridelements-column {margin-top: 0;}
+
+
+/* hide br in content */
+.exampleContent a br {display: none}
+
+
+
+/* TYPO 8.x.x */
+.modulemenu .modulemenu-group-container .modulemenu-group-title,
+.modulemenu .modulemenu-group-container .modulemenu-item-title {padding-top: 0;}
+.modulemenu-group-container .modulemenu-icon .t3js-icon {margin:0 0 5px 5px;height: 20px;width: 20px;}
+.modulemenu-group-container .modulemenu-icon .t3js-icon img {max-width: 100%;height: auto;width: 100%;}

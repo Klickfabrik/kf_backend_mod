@@ -1,0 +1,15 @@
+.. |img-1|      image:: Main/Images/line.png
+.. :align: left
+
+.. |img-2|      image:: Main/Images/typo3logo.png
+.. :border: 0
+.. :height: 21
+.. :hspace: 9
+.. :name: Logo
+.. :width: 87
+
+.. |be-saveicon|      image:: Main/Images/backend_saveicons.png
+.. :align: left
+
+.. |be-smallicon|      image:: Main/Images/backend_smallericons.png
+.. :align: left
