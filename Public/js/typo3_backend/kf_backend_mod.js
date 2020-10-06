@@ -1,6 +1,6 @@
 TYPO3.jQuery(document).ready(function($){
 
-    var contentSub = $('.t3-grid-container .exampleContent');
+    var contentSub = $('.t3-grid-container .t3-page-ce-body-inner');
 
     // substring previewtext
     if(contentSub.length>0){
@@ -9,10 +9,10 @@ TYPO3.jQuery(document).ready(function($){
             var that = $(this);
             var maxLength = 250;
 
-            that.find(".t3-page-ce-body a").each(function(){
+            that.find("a").each(function(){
                 var text = $(this).text();
                 if(text.length > maxLength){
-                    $(this).text(text.substring(0, maxLength)+"...");
+                    //$(this).text(text.substring(0, maxLength)+"...");
                 }
             });
         });
