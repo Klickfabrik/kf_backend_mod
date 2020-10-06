@@ -18,5 +18,3 @@ TYPO3.jQuery(document).ready(function($){
         });
     }
 });
-
-

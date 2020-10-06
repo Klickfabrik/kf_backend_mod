@@ -1,0 +1,6 @@
+/* TYPO 9 */
+.modulemenu .modulemenu-group-container .modulemenu-group-title,
+.modulemenu .modulemenu-group-container .modulemenu-item-title {padding: 3px 0 0 6px;}
+.modulemenu-group-container .modulemenu-icon {margin: 2px 0;}
+.modulemenu-group-container .modulemenu-icon .t3js-icon {margin:0 0 0 10px;height: 20px;width: 20px;}
+.modulemenu-group-container .modulemenu-icon .t3js-icon img {max-width: 100%;height: auto;width: 100%;}
