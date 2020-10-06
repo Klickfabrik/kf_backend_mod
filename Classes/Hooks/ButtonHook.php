@@ -11,7 +11,7 @@ use TYPO3\CMS\Backend\Template\Components\Buttons\InputButton;
  * Class SaveButtonHook
  * @package Goran\SaveCloseCe\Hooks
  */
-Class SaveCloseHook
+Class ButtonHook
 {
     /**
      * @param array $params
@@ -34,6 +34,31 @@ Class SaveCloseHook
             ->setShowLabelText(true);
 
           $buttons[\TYPO3\CMS\Backend\Template\Components\ButtonBar::BUTTON_POSITION_LEFT][2][] = $saveCloseButton;
+        }
+        return $buttons;
+    }
+
+    /**
+     * @param array $params
+     * @param $buttonBar
+     * @return array
+     */
+    public function addSaveShowButton($params, &$buttonBar)
+    {
+        $buttons = $params['buttons'];
+        $saveButton = $buttons[\TYPO3\CMS\Backend\Template\Components\ButtonBar::BUTTON_POSITION_LEFT][2][0];
+        if ($saveButton instanceof InputButton) {
+            $iconFactory = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconFactory::class);
+
+            $saveAndShowPageButton = $buttonBar->makeInputButton()
+                ->setName('save_and_show')
+                ->setValue('1')
+                ->setForm($saveButton->getForm())
+                ->setTitle($this->getLanguageService()->sL('LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:rm.saveDocShow'))
+                ->setIcon($iconFactory->getIcon('actions-document-save-view', \TYPO3\CMS\Core\Imaging\Icon::SIZE_SMALL))
+                ->setShowLabelText(true);
+
+            $buttons[\TYPO3\CMS\Backend\Template\Components\ButtonBar::BUTTON_POSITION_LEFT][2][] = $saveAndShowPageButton;
         }
         return $buttons;
     }

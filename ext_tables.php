@@ -67,5 +67,6 @@ if (version_compare(TYPO3_branch, '6.2', '<')) {
 
 // Save and close button
 if($version == 9){
-    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['Backend\Template\Components\ButtonBar']['getButtonsHook'][] = 'Klickfabrik\SaveCloseCe\Hooks\SaveCloseHook->addSaveCloseButton';
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['Backend\Template\Components\ButtonBar']['getButtonsHook'][] = 'Klickfabrik\SaveCloseCe\Hooks\ButtonHook->addSaveShowButton';
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['Backend\Template\Components\ButtonBar']['getButtonsHook'][] = 'Klickfabrik\SaveCloseCe\Hooks\ButtonHook->addSaveCloseButton';
 }
