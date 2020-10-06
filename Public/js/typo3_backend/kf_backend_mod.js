@@ -9,7 +9,7 @@ TYPO3.jQuery(document).ready(function($){
             var that = $(this);
             var maxLength = 250;
 
-            that.find("a").each(function(){
+            that.find(".t3-page-ce-body a").each(function(){
                 var text = $(this).text();
                 if(text.length > maxLength){
                     $(this).text(text.substring(0, maxLength)+"...");
