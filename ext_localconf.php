@@ -29,7 +29,7 @@ if (TYPO3_MODE == 'BE') {
     $javascriptFile = sprintf("%s/Public/js/typo3_backend/kf_backend_mod_8x.js",$path);
 
     // TYPO3 VERSION SWITCH
-    $version = substr(TYPO3_version,0,1);
+    $version = (int)substr(TYPO3_version,0,1)  === 1 ? (int)substr(TYPO3_version,0,2) : (int)substr(TYPO3_version,0,1);
     switch ( $version ) {
         case 7:
             $doc = GeneralUtility::makeInstance('TYPO3\\CMS\\Backend\\Template\\DocumentTemplate');
@@ -43,6 +43,11 @@ if (TYPO3_MODE == 'BE') {
             break;
         case 9:
             $javascriptFile = sprintf("%s/Public/js/typo3_backend/kf_backend_mod_9x.js",$path);
+            $pageRenderer = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Page\PageRenderer::class);
+            $pageRenderer->addJsInlineCode('effects', file_get_contents($javascriptFile));
+            break;
+        case 10:
+            $javascriptFile = sprintf("%s/Public/js/typo3_backend/kf_backend_mod_10x.js",$path);
             $pageRenderer = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Page\PageRenderer::class);
             $pageRenderer->addJsInlineCode('effects', file_get_contents($javascriptFile));
             break;

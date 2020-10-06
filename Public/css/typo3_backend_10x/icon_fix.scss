@@ -1,0 +1,43 @@
+/* TYPO 10 */
+
+.modulemenu .modulemenu-group-container {
+  .modulemenu-group-title, .modulemenu-item-title {
+    padding: 3px 0 0 6px;
+  }
+}
+
+.modulemenu-group-container {
+  .modulemenu-group-container {
+    .modulemenu-icon {
+      height: 20px;
+      width: 20px;
+      .icon-size-default {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+}
+
+#dashboard {
+  .modulemenu-icon {
+    height: 20px;
+    width: 20px;
+    .icon-size-default {
+      height: 20px;
+      width: 20px;
+    }
+  }
+}
+
+/* hide labels */
+.btn-toolbar > {
+  .btn-group > .btn, .btn {
+    font-size: 0;
+  }
+
+  .btn-group > .btn *, .btn * {
+    text-indent: inherit;
+    font-size: inherit;
+  }
+}

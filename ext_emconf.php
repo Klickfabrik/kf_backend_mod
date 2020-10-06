@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "kf_backend_mod".
  *
- * Auto generated 25-11-2019 07:17
+ * Auto generated 06-10-2020 10:06
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
@@ -18,21 +18,21 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'marc@klickfabrik.net',
     'state' => 'stable',
     'uploadfolder' => false,
-    'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '1.3.0',
+    'version' => '1.4.0',
     'constraints' =>
         [
             'depends' =>
                 [
-                    'typo3' => '6.2.0-9.5.99',
+                    'typo3' => '6.2.0-10.4.99',
                 ],
             'conflicts' =>
-                [ ],
+                [
+                ],
             'suggests' =>
-                [ ],
+                [
+                ],
         ],
     'clearcacheonload' => false,
     'author_company' => NULL,
 ];
-

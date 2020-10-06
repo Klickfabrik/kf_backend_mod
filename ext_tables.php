@@ -7,19 +7,25 @@ if (!defined('TYPO3_MODE')) {
 }
 
 // TYPO3 VERSION SWITCH
-$version = (int) substr(TYPO3_version,0,1);
+$_EXTKEY = isset($_EXTKEY) ? $_EXTKEY : 'kf_backend_mod';
+$version = (int)substr(TYPO3_version,0,1)  === 1 ? (int)substr(TYPO3_version,0,2) : (int)substr(TYPO3_version,0,1);
 switch ( $version ) {
     case $version < 9:
         $skin = sprintf("EXT:%s/Public/css/typo3_backend_8x/", $_EXTKEY);
+        $TBE_STYLES['skins']['kf_backend_mod']['name'] = 'klickfabrik_mod';
+        $TBE_STYLES['skins']['kf_backend_mod']['stylesheetDirectories']['structure'] = $skin;
         break;
     case 9:
         $skin = sprintf("EXT:%s/Public/css/typo3_backend_9x/", $_EXTKEY);
+        $TBE_STYLES['skins']['kf_backend_mod']['name'] = 'klickfabrik_mod';
+        $TBE_STYLES['skins']['kf_backend_mod']['stylesheetDirectories']['structure'] = $skin;
+        break;
+    case 10:
+        $skin = sprintf("EXT:%s/Public/css/typo3_backend_10x/", $_EXTKEY);
+        $GLOBALS['TBE_STYLES']['skins']['kf_backend_mod']['name'] = 'klickfabrik_mod';
+        $GLOBALS['TBE_STYLES']['skins']['kf_backend_mod']['stylesheetDirectories']['structure'] = $skin;
         break;
 }
-
-/// TYPO3 Skin
-$TBE_STYLES['skins']['kf_backend_mod']['name'] = 'klickfabrik_mod';
-$TBE_STYLES['skins']['kf_backend_mod']['stylesheetDirectories']['structure'] = $skin;
 
 // Feld, das in allen Sprachen existiert
 $addLangPagesColumn = array(
@@ -66,7 +72,9 @@ if (version_compare(TYPO3_branch, '6.2', '<')) {
 }
 
 // Save and close button
-if($version == 9){
-    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['Backend\Template\Components\ButtonBar']['getButtonsHook'][] = 'Klickfabrik\SaveCloseCe\Hooks\ButtonHook->addSaveShowButton';
-    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['Backend\Template\Components\ButtonBar']['getButtonsHook'][] = 'Klickfabrik\SaveCloseCe\Hooks\ButtonHook->addSaveCloseButton';
+switch ( $version ) {
+    case 9:
+    case 10:
+        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['Backend\Template\Components\ButtonBar']['getButtonsHook'][] = 'Klickfabrik\SaveCloseCe\Hooks\ButtonHook->addSaveCloseButton';
+        break;
 }
