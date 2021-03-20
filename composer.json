@@ -23,5 +23,10 @@
       "extension-key": "kf_backend_mod",
       "cms-package-dir": "{$vendor-dir}/typo3/cms"
     }
+  },
+  "autoload": {
+    "psr-4": {
+      "Klickfabrik\\SaveCloseCe\\": "Classes/"
+    }
   }
 }
