@@ -37,6 +37,17 @@ Also i use a small jquery script to reduce the content in the previewfields.
 - save-icons not in dropdown, Icons next to each other (faster to save, save and new, save and close)
 
 
+Custom-Modification
+-------------------
+
+- With this extension you can write in the page a custom-class field
+>> See: _sample/page_class.ts
+
+- Also you can add a special SEO-Title if you want
+>> See: _sample/page_title.ts
+
+
+
 Screenshots
 -----------
 
