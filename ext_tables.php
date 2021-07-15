@@ -7,7 +7,7 @@ if (!defined('TYPO3_MODE')) {
 }
 
 // TYPO3 VERSION SWITCH
-$_EXTKEY = isset($_EXTKEY) ? $_EXTKEY : 'kf_backend_mod';
+$_EXTKEY = 'kf_backend_mod';
 $version = (int)substr(TYPO3_version,0,1)  === 1 ? (int)substr(TYPO3_version,0,2) : (int)substr(TYPO3_version,0,1);
 switch ( $version ) {
     case $version < 9:
