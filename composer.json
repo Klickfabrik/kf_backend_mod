@@ -1,32 +1,32 @@
 {
-  "name": "klickfabrik/kf_backend_mod",
-  "type": "typo3-cms-extension",
-  "description": "little backend mod for TYPO3 CMS",
-  "keywords": [
-    "TYPO3",
-    "backend",
-    "icons"
-  ],
-
-  "license": "GPL-2.0-or-later",
-  "require": {
-    "typo3/cms-core": "6.2.* || 8.9.* || 9.5.* || 10.4.*"
-  },
-  "authors": [
-    {
-      "name": "Marc Finnern",
-      "role": "Developer"
+    "name": "klickfabrik/kf_backend_mod",
+    "type": "typo3-cms-extension",
+    "description": "little backend mod for TYPO3 CMS",
+    "keywords": [
+        "TYPO3",
+        "backend",
+        "icons"
+    ],
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": "^7.",
+        "typo3/cms-core": "^6.2 || ^8.9 || ^9.5 || ^10.4 || ^11.5"
+    },
+    "authors": [
+        {
+            "name": "Marc Finnern",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "kf_backend_mod",
+            "cms-package-dir": "{$vendor-dir}/typo3/cms"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Klickfabrik\\KFBackendMod\\": "Classes/"
+        }
     }
-  ],
-  "extra": {
-    "typo3/cms": {
-      "extension-key": "kf_backend_mod",
-      "cms-package-dir": "{$vendor-dir}/typo3/cms"
-    }
-  },
-  "autoload": {
-    "psr-4": {
-      "Klickfabrik\\SaveCloseCe\\": "Classes/"
-    }
-  }
 }
